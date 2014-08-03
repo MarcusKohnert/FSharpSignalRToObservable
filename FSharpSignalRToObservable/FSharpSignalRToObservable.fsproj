@@ -114,15 +114,13 @@
   </Target>
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
-    <Content Include="Web.config" />
-    <None Include="packages.config" />
+    <Compile Include="TickerHub.fs" />
     <Content Include="Scripts\jquery-1.6.4-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.4.min.js" />
     <Content Include="Scripts\jquery-1.6.4.js" />
     <Content Include="Scripts\jquery.signalR-2.1.1.min.js" />
     <Content Include="Scripts\jquery.signalR-2.1.1.js" />
     <None Include="Scripts\rx-lite.d.ts" />
-    <None Include="Scripts\rx.async-lite.d.ts" />
     <None Include="Scripts\rx.time-lite.d.ts" />
     <Content Include="Scripts\rx.lite.min.js" />
     <Content Include="Scripts\rx.lite.js" />
@@ -131,8 +129,22 @@
     <Content Include="Scripts\rx.lite.compat.js" />
     <None Include="Scripts\rx.binding-lite.d.ts" />
     <None Include="Scripts\rx.backpressure-lite.d.ts" />
+    <None Include="Scripts\rx.async-lite.d.ts" />
+    <Content Include="Scripts\tickerHub.js" />
+    <None Include="default.aspx" />
+    <Compile Include="Startup.fs" />
+    <None Include="packages.config" />
+    <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Dynamitey">
+      <HintPath>..\packages\Dynamitey.1.0.2.0\lib\net40\Dynamitey.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FSharp.Dynamic">
+      <HintPath>..\packages\FSharp.Dynamic.1.4.2.0\lib\net40\FSharp.Dynamic.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.AspNet.SignalR.Core">
       <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.2.1.1\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
       <Private>True</Private>
@@ -162,6 +174,22 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Reactive.Core">
+      <HintPath>..\packages\Rx-Core.2.2.5\lib\net45\System.Reactive.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces">
+      <HintPath>..\packages\Rx-Interfaces.2.2.5\lib\net45\System.Reactive.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Reactive.Linq">
+      <HintPath>..\packages\Rx-Linq.2.2.5\lib\net45\System.Reactive.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Reactive.PlatformServices">
+      <HintPath>..\packages\Rx-PlatformServices.2.2.5\lib\net45\System.Reactive.PlatformServices.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web" />
     <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <Private>True</Private>
