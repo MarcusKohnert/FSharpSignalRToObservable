@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharpSignalRToObservable", "FSharpSignalRToObservable\FSharpSignalRToObservable.fsproj", "{F7229034-60BE-4D06-A56D-2CA7CC6AD5D2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{EF479DA4-95D0-403F-B5E5-CCD477A1B7FA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B09D2625-8F2F-4571-B84B-8C012DF72081}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
